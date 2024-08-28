@@ -67,7 +67,6 @@ export default function Home() {
 
   useEffect(() => {
     if (primaryCost.length > 0 && resultsRef.current) {
-      // Scroll to the results section when primaryCost is not empty
       resultsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [primaryCost]);
@@ -193,6 +192,7 @@ export default function Home() {
                 <Button
                   _hover={{ bgColor: "gray", color: "black" }}
                   disabled={loading}
+                  isLoading={loading}
                   onClick={() => handleCalculateCost()}
                 >
                   {t("button")}
@@ -233,7 +233,7 @@ export default function Home() {
                               fontWeight={"bold"}
                               color={"black"}
                             >
-                              {"Estimated Day"}
+                              {t("estimatedDay")}
                             </Text>
                             <Text fontSize={"md"} color={"black"}>
                               {item.cost[0].etd}
@@ -250,7 +250,7 @@ export default function Home() {
                               fontWeight={"bold"}
                               color={"black"}
                             >
-                              {"Shipping Prive"}
+                              {t("shippingPrice")}
                             </Text>
                             <Text fontSize={"md"} color={"black"}>
                               {item.cost[0].value}

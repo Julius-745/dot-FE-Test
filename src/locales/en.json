@@ -16,6 +16,8 @@
         "weightTitle": "Weight",
         "courierTitle": "Courier",
         "courierPlaceholder": "Select Courier",
-        "button": "Show Result"
+        "button": "Show Result",
+        "shippingPrice": "Shipping Price",
+        "estimatedDay": "Estimated Day"
     }
 }
