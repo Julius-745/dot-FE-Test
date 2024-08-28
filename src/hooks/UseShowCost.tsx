@@ -34,13 +34,13 @@ export const UseShowCost = () => {
         weight,
         courier,
       });
-      if(response.rajaongkir.results[0].costs.length === 0){
+      if (response.rajaongkir.results[0].costs.length === 0) {
         toast({
-            title: `Warning`,
-            status: "warning",
-            description: `${courier} not have this route`,
-            isClosable: true,
-          })
+          title: `Warning`,
+          status: "warning",
+          description: `${courier} not have this route`,
+          isClosable: true,
+        });
       } else {
         setPrimaryCost(response.rajaongkir.results[0].costs);
       }

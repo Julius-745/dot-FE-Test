@@ -13,14 +13,18 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import { CardWrapper } from "@/_component";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
 import { useFetchData, UseShowCost } from "@/hooks";
 import { ICity, IProvince, IShowCost } from "@/type";
 import { useRef, useState, useEffect } from "react";
 import { Courier } from "@/constant";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
   const t = useTranslations("priceCalculator");
+  const user = localStorage.getItem("user");
+  const router = useRouter();
+  const locale = useLocale();
   const [selectedOrgProvince, setSelectedOrgProvince] = useState<string>("");
   const [selectedDestProvince, setSelectedDestProvince] = useState<string>("");
   const [weight, setWeight] = useState<string>("");
@@ -70,6 +74,20 @@ export default function Home() {
       resultsRef.current.scrollIntoView({ behavior: "smooth" });
     }
   }, [primaryCost]);
+
+  useEffect(() => {
+    if (!user) {
+      router.push(`/${locale}/login`);
+    }
+  }, [user, router, locale]);
+
+  if (!user) {
+    return (
+      <Center h="100vh">
+        <Text>Redirecting...</Text>
+      </Center>
+    );
+  }
 
   return (
     <Center w="100%" p={10}>
