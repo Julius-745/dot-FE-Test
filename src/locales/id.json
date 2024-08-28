@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "title": "Ship Cost",
+        "description": "platform cek ongkir"
+    },
+    "priceCalculator": {
+        "title": "Kalkulator Harga",
+        "originTitle": "Kota Asal",
+        "orgProvPlaceholder": "Pilih Provinsi Asal",
+        "originPlaceholder": "Pilih Kota Asal",
+        "origin": "Pilih Kota Asal",
+        "destinationTitle": "Kota Tujuan",
+        "destProvPlaceholder": "Pilih Provinsi Tujuan",
+        "destinationPlaceholder": "Pilih Kota Tujuan",
+        "destination": "Pilih Kota Tujuan",
+        "weightTitle": "Berat",
+        "courierTitle": "Kurir",
+        "courierPlaceholder": "Pilih Kurir",
+        "button": "Tampilkan Hasil"
+    }
+}

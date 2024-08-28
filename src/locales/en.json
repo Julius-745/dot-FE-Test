@@ -1,0 +1,21 @@
+{
+    "metadata": {
+        "title": "Ship Cost",
+        "description": "shipping checkker platform"
+    },
+    "priceCalculator": {
+        "title": "Price Calculator",
+        "originTitle": "Origin City",
+        "orgProvPlaceholder": "Select Origin Province",
+        "originPlaceholder": "Select Origin City",
+        "origin": "Select Origin City",
+        "destinationTitle": "Destination City",
+        "destProvPlaceholder": "Select Destination Province",
+        "destinationPlaceholder": "Select Destination City",
+        "destination": "Select Destination City",
+        "weightTitle": "Weight",
+        "courierTitle": "Courier",
+        "courierPlaceholder": "Select Courier",
+        "button": "Show Result"
+    }
+}
