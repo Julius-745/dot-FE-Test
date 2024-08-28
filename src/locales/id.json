@@ -16,6 +16,8 @@
         "weightTitle": "Berat",
         "courierTitle": "Kurir",
         "courierPlaceholder": "Pilih Kurir",
-        "button": "Tampilkan Hasil"
+        "button": "Tampilkan Hasil",
+        "shippingPrice": "Harga Ongkir",
+        "estimatedDay": "Estimasi Hari"
     }
 }
